@@ -1,0 +1,14 @@
+site '*://*.zhihu.com/*' {
+      unmap o
+      set numerichints
+}
+set smoothscroll
+set noautofocus
+let locale = "jp"
+let scrollduration=300
+map u lastClosedTab
+map <A-j> scrollPageDown
+map <A-k> scrollPageUp
+let nextmatchpattern="((?!first)(next|older|more|forward|下一页| )+)"
+let previousmatchpattern="((?!last)(prev(ious)?|newer|back|less|上一页| )+)"
+let blacklists = ["https://mail.google.com/*","*://mail.google.com/*","@https://mail.google.com/mail/*"]
